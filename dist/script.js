@@ -13,9 +13,8 @@ if (startBtn && modal && tonWalletBtn && websiteBtn && groupBtn) {
         startBtn.classList.add('hidden');
     });
     // TON Wallet Connect
-    tonWalletBtn.addEventListener('click', () => {
-        alert('TON Wallet Connect clicked');
-    });
+    // tonWalletBtn.addEventListener('click', () => {
+    // });
     // Website Redirect
     websiteBtn.addEventListener('click', () => {
         window.location.href = 'https://rzlt.io/';
