@@ -14,9 +14,9 @@ if (startBtn && modal && tonWalletBtn && websiteBtn && groupBtn) {
     });
 
     // TON Wallet Connect
-    tonWalletBtn.addEventListener('click', () => {
-        alert('TON Wallet Connect clicked');
-    });
+    // tonWalletBtn.addEventListener('click', () => {
+        
+    // });
 
     // Website Redirect
     websiteBtn.addEventListener('click', () => {
