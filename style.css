@@ -81,3 +81,30 @@ div.go1487791704 {
     background-color: #1c93e3;
     color: black;
 }
+
+.displayFlexResponsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px){
+    img{
+        width: 115px;
+    }
+    
+    #modal > button{
+        width: 80%;
+        padding: 15px 5px;
+    }
+
+    #ton-connect{
+        width: 80%;
+    }
+
+    #startBtn{
+        margin-top: 40px;
+        font-size: 15px;
+        width: 30%;
+    }
+}
