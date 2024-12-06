@@ -8,13 +8,15 @@ const groupBtn = document.getElementById('groupBtn');
 if (startBtn && modal && tonWalletBtn && websiteBtn && groupBtn) {
     // Show modal on start button click
     startBtn.addEventListener('click', () => {
+        if (window.innerWidth <= 600) {
+            modal.classList.remove('hidden');
+            modal.classList.add('displayFlexResponsive');
+            startBtn.classList.add('hidden');
+        }
         modal.classList.remove('hidden');
         modal.classList.add('displayFlex');
         startBtn.classList.add('hidden');
     });
-    // TON Wallet Connect
-    // tonWalletBtn.addEventListener('click', () => {
-    // });
     // Website Redirect
     websiteBtn.addEventListener('click', () => {
         window.location.href = 'https://rzlt.io/';
