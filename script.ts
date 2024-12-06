@@ -8,15 +8,16 @@ const groupBtn = document.getElementById('groupBtn') as HTMLButtonElement;
 if (startBtn && modal && tonWalletBtn && websiteBtn && groupBtn) {
     // Show modal on start button click
     startBtn.addEventListener('click', () => {
+        if(window.innerWidth <= 600)
+        {
+            modal.classList.remove('hidden');
+            modal.classList.add('displayFlexResponsive');
+            startBtn.classList.add('hidden');
+        }
         modal.classList.remove('hidden');
         modal.classList.add('displayFlex');
         startBtn.classList.add('hidden');
     });
-
-    // TON Wallet Connect
-    // tonWalletBtn.addEventListener('click', () => {
-        
-    // });
 
     // Website Redirect
     websiteBtn.addEventListener('click', () => {
@@ -27,6 +28,8 @@ if (startBtn && modal && tonWalletBtn && websiteBtn && groupBtn) {
     groupBtn.addEventListener('click', () => {
         window.location.href = 'https://t.me/cbinsider';
     });
+    
 } else {
     console.error('One or more elements not found');
 }
+
